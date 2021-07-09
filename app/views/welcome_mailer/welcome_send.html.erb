@@ -1,0 +1,6 @@
+<h1>Hello <%=@user.email%></h1>
+<%if @user.buyer?%>
+  <h2>Welcome to StockHome</h2>
+<%elsif @user.broker?%>
+  <h2>Welcome to StockHome. We are still Proccessing your account please wait for the Admin to Approve your Registration. Thank you</h2>
+<%end%>

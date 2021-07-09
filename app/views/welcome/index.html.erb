@@ -1,0 +1,15 @@
+<div class="landing-page">
+  <div class="welcome d-flex">
+    <div class="welcome-text">
+      <h1 class='text-center'>StockHome</h1>
+      <h4>Start trading as a broker or buyer.</h4>
+        <div class="btn-container">
+          <%= link_to 'Start now', new_user_registration_path, class:'btn btn-sm animated-button thar-three' %>
+        </div>
+    </div>
+  </div>
+
+  <div class="rounded-box"></div>
+
+  <%= link_to 'signout', destroy_user_session_path, method: :delete %>
+</div>
